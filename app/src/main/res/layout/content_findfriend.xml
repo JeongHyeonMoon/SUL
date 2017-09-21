@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f09ba0"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/u0_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5797a"
+        android:text="ID" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/u_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:hint="친구 검색 ID"
+            android:singleLine = "true"
+            android:lines = "1"
+            android:layout_weight="9"
+            android:background="@null" />
+
+
+        <Button
+            android:id="@+id/srchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            android:layout_alignEnd="@+id/u_id"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/u_id"
+            android:layout_margin="10dp"
+            android:background="#FFFF4182"
+            android:onClick="insert"
+            android:text="검색" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5797a"
+            android:text="검색 결과" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/joinBtn"
+            android:background="#f09ba0"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

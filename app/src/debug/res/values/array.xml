@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  <!-- Before you file -->
+    <string-array name="before_you_file">
+        <!-- <item>Before you file</item> -->
+    </string-array>
+    <string-array name="dash_board">
+        <item>길 찾기</item>
+        <item>약속장로 가기</item>
+        <item>집으로 가기</item>
+    </string-array>
+
+</resources>
